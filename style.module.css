@@ -1,0 +1,23 @@
+.timeZone{
+    display: none;
+}
+
+/* code for responciveness... */
+
+@media screen and (min-width:350px) and (max-width:580px){
+    .timeZone{
+        width: 90%;
+        height: 90vh;
+    }
+    .header{
+        padding: 0px;
+        flex-direction: column;
+    }
+    .searchContainer{
+        margin: -2rem;
+    }
+    .inputdata{
+        width: 200px;
+        margin: 30px;
+    }
+}

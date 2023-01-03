@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StopWatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="./style.module.css">
+  </head>
+  <body class="d-flex justify-content-center align-items-center bg-danger bg-opacity-75" style="height: 100vh;">
+    <!-- Below code is for Stopwatch -->
+    <div class="mainContainer border border-1 border-warning bg-info text-center p-5 m-1">
+        <h2><span class="text-danger">StopWatch</span> or <span class="text-success">TimeZone</span></h2>
+        <br/>
+        <h3>Made By "<span class="text-danger">Ankur</span>"</h3>
+        <br/>
+        <div class="timer">
+            <h4>00:00:00</h4>
+        </div>
+        <br>
+        <div class="controlbuttons">
+            <button type="button" class="m-3 border border-1 rounded p-2 border-warning font-monospace fs-5  outline-secondary" onclick="resetTimer()">Reset</button>
+            <button class="m-3 border border-1 rounded p-2 border-warning font-monospace fs-5"
+            onclick="stopTimer()">Stop</button>
+            <button class="m-3 border border-1 rounded p-2 border-warning font-monospace fs-5" onclick="startTimer()">Start</button>
+            <button class="m-3 border border-1 rounded p-2 border-warning font-monospace fs-5" onclick="getCurrentTimer()">Get_Current_Time</button>
+        </div>
+        <!-- <br/> -->
+        <div class="timeZonepage">
+            <button class="m-2 border border-1 rounded p-2 border-warning font-monospace fs-5 bg-secondary text-white timeZonebutton" >Swich_TimeZone</button>
+        </div>
+
+    </div>
+<!-- Below code for Timezone... -->
+    <div class="timeZone border border-1 bg-info text-center ">
+        <div class="header d-flex justify-content-between m-3 align-items-center">
+            <h1 class="m-3 text-danger text-italic fw-bold text-decoration-underline">TimeZone</h1>
+            <div class="d-flex align-items-center p-2 m-2 searchContainer">
+                <input type="text" placeholder="Search for places..." class="form-control me-2 inputdata" type="search" placeholder="Search" aria-label="Search">
+                <button type="button" class="btn btn-outline-success m-1 searchbutton">Search</button>
+            </div>
+        </div>
+        <div class="timeregardingZone m-4">
+            <h4 class="text-decoration-capitalized">Current_time_of_that <br>
+                place_and_name</h4><br>
+            <h4 class="timeZonetimere text-success">Time : <span id="time"></span></h4>
+            <h4 class="timeZonetimere text-success">TimeZone : <span id="timezone"></span></h4>
+        </div>
+        <div class="ChangeStopwatch">
+            <button class="m-3 border border-1 rounded p-2 border-warning font-monospace fs-5 bg-secondary text-white" id="ChangeStopwatch">Swich_Stopwatch</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="./timezone.js"></script>
+  </body>
+</html>
